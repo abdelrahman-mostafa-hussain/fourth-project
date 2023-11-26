@@ -15,12 +15,14 @@ def readFile(file):
 def removeUnwantChar(content):
     return re.sub("[^a-zA-Z0-9\s]","",content)
 
+def countWord(list):
+    return len(list)
+
 def main():
     path=input("enter the file path: ")
     file=isExistFile(path)
     if file!=None:
         content=readFile(file)
-        
 
 if __name__=="__main__":
     main()
