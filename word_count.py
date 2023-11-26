@@ -7,9 +7,14 @@ def isExistFile(path):
         print("file is not exist")
         return None
 
+def readFile(file):
+    return file.read()
+
 def main():
     path=input("enter the file path: ")
     file=isExistFile(path)
+    if file!=None:
+        content=readFile(file)
 
 if __name__=="__main__":
     main()
